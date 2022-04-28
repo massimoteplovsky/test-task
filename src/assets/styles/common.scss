@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  font-size: 1.4rem;
+  font-family: 'Manrope', sans-serif;
+  background-color: $white;
+  color: $text-color;
+
+  @media (max-width: $xs-screen) {
+    min-width: $xs-screen;
+  }
+}
+
+input {
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-content {
+  padding-top: 88px;
+
+  @media (max-width: $md-screen) {
+    padding-top: 56px;
+  }
+}
+
+.container {
+  max-width: 930px;
+  margin: 0 auto;
+
+  @media (max-width: $xl-screen) {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}

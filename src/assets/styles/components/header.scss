@@ -1,0 +1,43 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid $border-color;
+  background: $white;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    height: 56px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    height: 88px;
+    padding: 0 138px;
+    margin: 0 auto;
+
+    @media (max-width: $xl-screen) {
+      width: 100%;
+      padding: 0 15px;
+    }
+
+    @media (max-width: $md-screen) {
+      height: 56px;
+    }
+  }
+
+  &__logo {
+    svg {
+      width: 74px;
+      height: 31px;
+
+      @media (max-width: $md-screen) {
+        width: 60px;
+        height: 25px;
+      }
+    }
+  }
+}

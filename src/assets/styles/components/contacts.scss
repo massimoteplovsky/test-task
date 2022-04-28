@@ -1,0 +1,32 @@
+.contacts {
+  display: flex;
+  font-size: 1.6rem;
+
+  &__item {
+    margin-right: 44px;
+
+    @media (max-width: 768px) {
+      margin-right: 17px;
+    }
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__link {
+    svg {
+      display: none;
+
+      @media (max-width: $md-screen) {
+        display: block;
+      }
+    }
+  }
+
+  &__text {
+    @media (max-width: $md-screen) {
+      display: none;
+    }
+  }
+}
