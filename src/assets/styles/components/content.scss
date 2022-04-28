@@ -1,0 +1,13 @@
+.content {
+  padding: 60px 0;
+
+  @media (max-width: $md-screen) {
+    padding: 20px 0;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+}
