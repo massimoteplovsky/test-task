@@ -2,7 +2,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import image from '../assets/images/slide.jpg';
-import { ReactNode } from 'react';
 
 const slides = new Array(3).fill({
   title: 'IT-инфраструктура для бизнеса',
@@ -15,6 +14,7 @@ const slides = new Array(3).fill({
 export const Carousel = () => {
   const settings = {
     dots: true,
+    autoplay: true,
     arrows: false,
     adaptiveHeight: true,
     infinite: true,
