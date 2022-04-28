@@ -30,12 +30,14 @@
   &__text {
     height: 120px;
     line-height: 20px;
-    white-space: wrap;
+    white-space: pre-wrap;
     overflow: hidden;
     text-overflow: ellipsis;
 
     @media (max-width: $l-screen) {
       height: auto;
+      overflow: initial;
+      text-overflow: initial;
     }
 
     @media (max-width: $md-screen) {
